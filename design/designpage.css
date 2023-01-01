@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300&display=swap'); */
+body{
+ background-color: #171717;
+ color: #ffffff;
+ margin: 0;
+ font-family: 'Heebo';
+ --content-load-delay: 100ms;
+}
+
+li{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    max-width: 200px;
+    border-radius: 50px;
+    transition: 0.46s;
+}
+
+li:hover{
+    background-color: whitesmoke;
+    font-weight: 400;
+    color: #171717;
+    transition-timing-function: ease-in-out;
+}
+
+.maincontent{
+    position: relative;
+    top: 100px;
+}
+
+.photoprofile{
+    object-fit: cover;
+    /* width: 18rem;
+    max-height: 18rem; */
+    width: 14rem;
+    max-height: 14rem;
+    border-radius: 50%;
+    opacity: 90%;
+}
+
+.centeredcontent{
+    justify-content: center;
+    text-align: center;
+}
+
+.profilename{
+    font-style: normal;
+    font-weight: 300;
+    /* font-size: 50px; */
+    font-size: 3rem;
+    line-height: 73px;
+}
+
+.iconsize{
+    max-height: 3rem;
+}
+
+.flexed-row{
+    display: flex;
+    gap: 35px;
+}
+
+.fade-in{
+    animation: content-load 400ms ease-in var(--content-load-delay) backwards;
+}
+
+.fade-in2{
+    animation: content-load 300ms ease-in calc(var(--content-load-delay) + 0.2s) backwards;
+}
+
+.fade-in3{
+    animation: content-load 400ms ease-in calc(var(--content-load-delay) + 0.4s) backwards;
+}
+
+.borderedgreen{
+    border-style: solid;
+    border-color: rgb(61, 207, 68);
+}
+
+.borderedred{
+    border-style: solid;
+    border-color: rgb(231, 0, 0);
+}
+
+.borderedblue{
+    border-style: solid;
+    border-color: blue;
+}
+
+/* Keyframe / animation */
+@keyframes content-load{
+
+    0%{
+        opacity: 0%;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
